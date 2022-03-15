@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+
+    <symbol id="arrow-right" viewBox="0 0 11 17">
+        <path d="M2.43335 14.7L8.63335 8.50005L2.43335 2.30005" stroke-width="2.06667"
+              stroke-linecap="square"/>
+    </symbol>
+
+    <symbol id="arrow-left" viewBox="0 0 11 17">
+        <path d="M8.56665 14.7L2.36665 8.50005L8.56665 2.30005" stroke-width="2.06667"
+              stroke-linecap="square"/>
+    </symbol>
+
+    <symbol id="arrow-bottom" viewBox="0 0 15 9">
+        <path d="M1.69995 1.56668L7.49995 7.36668L13.3 1.56668" stroke-width="1.93333" stroke-linecap="square"/>
+    </symbol>
+
+</svg>
