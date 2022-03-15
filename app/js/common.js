@@ -26,3 +26,21 @@ $(document).ready(function () {
         pointerEvents: true
     });
 });
+
+$('.form-quiz__content').slick({
+    slidesToShow: 1,
+    fade: true,
+    dots: true,
+    appendArrows: '.form-quiz__nav',
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"><span class="slick-arrow__text">Назад</span><span class="slick-arrow__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><span class="slick-arrow__text">Вперед</span><span class="slick-arrow__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></button>'
+});
+
+
+$(".form-quiz__content").on("afterChange", function (event) {
+    if ($(this).find('.slick-slide').last().hasClass('slick-active')) {
+        $('.form-quiz').addClass('form-quiz-result');
+        $('.btn-presents').hide();
+    }
+});
