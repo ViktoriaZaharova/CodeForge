@@ -8,24 +8,36 @@ $(document).ready(function () {
                 scrollTop: $(scroll_el).offset().top
             }, 500);
         }
+        $('.mobile-menu').fadeOut();
+        $('.home').removeClass('open-menu');
+        $('header').removeClass('open-menu');
+        $('body').removeClass('no-scroll');
+        $('.btn-menu').removeClass('click');
+
         return false;
+
     });
 });
 //плавный скролл end
 
 $('.btn-menu').on('click', function () {
-   $(this).toggleClass('click');
-   $('.mobile-menu').fadeToggle();
-   $('.home').toggleClass('open-menu');
-   $('header').toggleClass('open-menu');
+    $(this).toggleClass('click');
+    $('.mobile-menu').fadeToggle();
+    $('.home').toggleClass('open-menu');
+    $('header').toggleClass('open-menu');
+    $('body').toggleClass('no-scroll');
 });
+
 
 $(document).ready(function () {
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene, {
         pointerEvents: true
     });
+
+
 });
+
 
 $('.form-quiz__content').slick({
     slidesToShow: 1,
@@ -40,7 +52,9 @@ $('.form-quiz__content').slick({
 
 $(".form-quiz__content").on("afterChange", function (event) {
     if ($(this).find('.slick-slide').last().hasClass('slick-active')) {
-        $('.form-quiz').addClass('form-quiz-result');
-        $('.btn-presents').hide();
+        $('.form-quiz__nav').hide();
+    }
+    if ($(this).find('.slick-dots li').first().hasClass('slick-active')) {
+        $('.form-quiz__nav').css('display', 'flex');
     }
 });

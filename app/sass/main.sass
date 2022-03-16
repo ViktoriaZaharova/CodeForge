@@ -72,6 +72,9 @@ body
   font-weight: normal
   background: #fff
 
+.no-scroll
+  overflow: hidden
+
 html, body
   overflow-x: hidden
 
@@ -266,7 +269,7 @@ h3
   font-size: 20px
   font-weight: bold
   text-align: center
-
+  font-family: $font
   &:hover
     color: $accent
 
@@ -309,11 +312,11 @@ header
   position: absolute
   z-index: 3
   width: 100%
-
+  .mobile-contacts
+    display: none
   &.open-menu
     .quote
       display: none
-
     .mobile-contacts
       display: flex
 
@@ -453,6 +456,7 @@ header
   top: 0
   width: 100%
   height: 100%
+  overflow-y: auto
   z-index: 2
   padding: 149px 0 0
   display: none
@@ -494,16 +498,20 @@ header
         height: 100%
 
 .mobile-contacts
-  display: none
+  display: flex
   align-items: center
+  justify-content: center
   margin: 0 auto
-
+  z-index: 2
+  position: relative
   .message
     display: inline-flex
 
   .phone
     display: inline-block
     margin: 0 0 0 21px
+
+
 
 //home
 .home
@@ -632,10 +640,6 @@ header
   align-items: center
   justify-content: center
 
-
-//.decor
-//  position: absolute !important
-
 .decor1
   top: 10% !important
   left: -297px !important
@@ -745,7 +749,6 @@ header
     top: 262px
     width: 225px
     height: 225px
-
     img
       animation: rot 5s linear infinite
 
@@ -792,6 +795,7 @@ header
 .work
   position: relative
   padding: 72px 0 0
+
   &:before
     content: ''
     position: absolute
@@ -806,6 +810,7 @@ header
 
   h2
     margin: 0 auto 51px
+
   .col-12
     position: initial
 
@@ -819,6 +824,7 @@ header
   flex-wrap: wrap
   border: none
     radius: 0
+
   .nav-link
     border: 1px solid rgba(134, 134, 134, 0.55)
       radius: 50%
@@ -835,6 +841,7 @@ header
     font-size: 15px
     margin: 0 -46px 0 0
     z-index: 2
+
     &:before
       content: ''
       position: absolute
@@ -842,16 +849,20 @@ header
       top: 0
       width: 100%
       height: 100%
+
     &:last-child
       margin: 0
+
     &:hover
       opacity: 1
       border: 1px solid rgba(134, 134, 134, 0.55)
+
     &.active
       background: #fff
       font-weight: 500
       z-index: 1
       border: 1px solid rgba(134, 134, 134, 0.55)
+
       &:before
         background: url("../img/decor-btn2.svg") no-repeat center
           size: cover
@@ -877,16 +888,20 @@ header
   &:before
     background: #FFC940
     opacity: .33
+
   .tab-content-img
     width: 817px
     right: -317px
     bottom: -172px
+
   .tabs-decor1
     bottom: 412px
     left: 0
+
   .tabs-decor2
     bottom: 123px
     right: 20px
+
   .tabs-decor3
     width: 167px
     height: 174px
@@ -898,13 +913,16 @@ header
   &:before
     background: rgba(92, 118, 255, 0.48)
     opacity: 0.6
+
   .tab-content-img
     width: 974px
     right: -387px
     bottom: -148px
+
     img
       position: relative
       z-index: 1
+
     &:before
       content: ''
       position: absolute
@@ -921,16 +939,20 @@ header
   &:before
     background: #F5D9BB
     opacity: .6
+
   .tab-content-img
     width: 942px
     right: -350px
     bottom: -164px
+
   .tabs-decor1
     bottom: 247px
     left: -48px
+
   .tabs-decor2
     right: -96px
     bottom: 381px
+
   .tabs-decor3
     width: 208px
     height: 222px
@@ -941,13 +963,16 @@ header
   &:before
     background: #6A85FF
     opacity: .6
+
   .tab-content-img
     width: 973px
     right: -375px
     bottom: -122px
+
   .tabs-decor1
     bottom: 337px
     left: -40px
+
   .tabs-decor2
     bottom: 213px
     right: 154px
@@ -962,16 +987,20 @@ header
   &:before
     background: #A7A7A7
     opacity: .33
+
   .tab-content-img
     width: 877px
     bottom: -160px
     right: -265px
+
   .tabs-decor1
     bottom: 337px
     left: -35px
+
   .tabs-decor2
     bottom: 386px
     right: 551px
+
   .tabs-decor3
     bottom: 270px
     right: 20px
@@ -982,16 +1011,20 @@ header
   &:before
     background: #CFDFFD
     opacity: .7
+
   .tab-content-img
     width: 906px
     bottom: -164px
     right: -313px
+
   .tabs-decor1
     bottom: 434px
     left: 260px
+
   .tabs-decor2
     bottom: 79px
     left: 45%
+
   .tabs-decor3
     bottom: 104px
     z-index: 1
@@ -1004,6 +1037,7 @@ header
   justify-content: space-between
   flex-wrap: wrap
   position: relative
+
   h3
     font-family: $font
     margin: 0 0 10px
@@ -1018,6 +1052,8 @@ header
   line-height: 35px
   padding: 0 0 0 65px
   margin: 130px 0 235px
+  .box-text
+    color: #090808
 
 .tabs-decor
   position: absolute
@@ -1053,10 +1089,10 @@ header
 
 //price
 .price
-  margin: 0 0 -95px
   padding: 156px 0 0
   position: relative
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -1068,6 +1104,7 @@ header
       size: cover
     opacity: .04
     z-index: -1
+
   &:after
     content: ''
     position: absolute
@@ -1082,13 +1119,16 @@ header
 
 .prices-wrapper
   position: relative
+
   h2
     text-align: left
 
 .prices-content
   width: 100%
+
   .box-text
     margin: 19px 0 43px
+
   &__title
     padding: 0 0 0 267px
 
@@ -1101,9 +1141,11 @@ header
   justify-content: center
   top: -88px
   left: -495px
+
   img
     position: relative
     z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -1114,7 +1156,6 @@ header
     top: -16px
     left: 140px
     border-radius: 50%
-    
 
 
 .price-box
@@ -1135,6 +1176,7 @@ header
   z-index: 1
   font-size: 18px
   line-height: 26px
+
   &:before
     content: ''
     position: absolute
@@ -1144,6 +1186,7 @@ header
     height: 100%
     background: url("../img/decor-btn.svg") no-repeat center
       size: cover
+
   &__val
     font-size: 20px
     font-weight: 600
@@ -1154,8 +1197,8 @@ header
   width: 100%
   max-width: 1080px
   margin: 0 auto
-  padding: 55px 50px 211px 161px
-  border-radius: 38px
+  padding: 55px 50px 230px 161px
+  border-radius: 38px 38px 0 0
 
 .form-quiz
   width: 100%
@@ -1163,14 +1206,51 @@ header
   z-index: 1
 
 .form-quiz__content-slide
-  padding: 0 80px 0 130px
+  width: 100%
   h4
     font-size: 23px
     color: #090808
     font-weight: 600
+
   .box-text
     margin: 10px 0 46px
     line-height: 28px
+
+  h3
+    font-family: $font
+    text-align: center
+    width: 100%
+    font-size: 37px
+    line-height: 55px
+    margin: -20px auto 15px
+
+.links-download
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $accent
+  font-size: 16px
+  font-weight: bold
+  margin: 0 auto
+  &__text
+    text-decoration: underline
+    text-transform: uppercase
+    margin: 0 0 0 8px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 20px
+    height: 20px
+  &:hover
+    color: #333
+
+.form-quiz__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 137px
+  margin: 0 auto
 
 .checkbox
   width: 100%
@@ -1192,12 +1272,13 @@ header
   border: 1.5px solid #DCDCDC
     radius: 6px
   position: relative
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 14px
     height: 11px
 
@@ -1205,18 +1286,22 @@ header
   + .checkbox-custom
     background: #AF7AFB
     border-color: #AF7AFB
+
     &:before
       background: url("../img/check.svg") no-repeat center
         size: 100%
+
     + .checkbox-text
       color: #000000
       font-weight: 500
 
 
 .list-checkbox
+  width: fit-content
   li
     margin: 0 0 11px
     width: 100%
+
     &:last-child
       margin: 0
 
@@ -1225,6 +1310,7 @@ header
 
 .slick-slide
   outline: none
+  width: 100%
 
 .slick-dots
   order: -1
@@ -1232,8 +1318,10 @@ header
   width: 100%
   display: flex
   align-items: flex-start
+  justify-content: center
   bottom: 0
   position: relative
+
   li
     cursor: pointer
     transition: .3s ease
@@ -1241,19 +1329,22 @@ header
     margin: 0 7px 0 0
     background-color: rgba(196, 196, 196, 0.42)
     background-size: 100% 100%
-    background-image: linear-gradient(to right,rgb(175,122,251) 100%,transparent 100%)
+    background-image: linear-gradient(to right, rgb(175, 122, 251) 100%, transparent 100%)
     background-repeat: no-repeat
     width: 66px
     height: 6px
 
     &:last-child
       margin: 0
+
     button
       display: none
+
     &.slick-active
       animation: right 3s ease-in-out forwards
       background: #AF7AFB
-      ~li
+
+      ~ li
         background-size: 0
 
 @keyframes right
@@ -1264,9 +1355,12 @@ header
     background-size: 100% 100%
 
 .form-quiz__content
+  width: 100%
   display: flex
   flex-direction: column
-  align-items: flex-start
+
+  .slick-slide
+    padding: 0 80px 0 130px
 
 .form-quiz__nav
   position: absolute
@@ -1286,6 +1380,7 @@ header
   color: #090808
   font-weight: 500
   font-size: 16px
+
   &__icon
     fill: none
     width: 31px
@@ -1296,11 +1391,13 @@ header
     stroke: #090808
     margin: 0 0 0 6px
     padding: 9px
+
   &:hover
     opacity: 0.18
 
 .slick-prev
   margin: 0 87px 0 0
+
   .slick-arrow__icon
     margin: 0 6px 0 0
     order: -1
@@ -1326,5 +1423,79 @@ footer
       &:hover
         color: $accent
 
+.btn-modal
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  color: #000
+  font-size: 20px
+  font-weight: bold
+  font-family: $font
+  display: none
 
+.btn-secondary.focus, .btn-secondary:focus
+  background: transparent
+  color: #000
 
+.modal-backdrop
+  background: rgba(9, 5, 5, 0.55)
+
+.modal-backdrop.show
+  opacity: 1
+
+.modal-content
+  padding: 24px 32px 63px
+  max-width: 328px
+  border: none
+    radius: 12px
+
+.modal-header
+  padding: 0
+  border: none
+    radius: 0
+  margin: 0 0 26px
+
+.modal-title
+  width: 100%
+  font-size: 18px
+  font-weight: 600
+  color: #222222
+
+.modal-body
+  padding: 0
+
+.label-radio
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 14px
+  color: #222222
+  font-size: 16px
+
+  &:last-child
+    margin: 0
+
+.inp-radio
+  display: none
+
+.radio-custom
+  position: relative
+  margin: 0 16px 0 0
+  border: 2px solid #000000
+    radius: 50%
+  width: 17px
+  height: 17px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 7px
+    height: 7px
+    border-radius: 50%
+
+.inp-radio:checked + .radio-custom
+  &:before
+    background: #000000

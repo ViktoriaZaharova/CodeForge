@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
 
 </head>
 
@@ -30,6 +31,8 @@
 
 <div class="mobile-menu">
   <div class="container">
+
+
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
         <a href="index.html" class="mobile-menu__links">Главная</a>
@@ -46,6 +49,17 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <a href="#contacts" class="mobile-menu__links go_to">Контакты</a>
       </div>
+
+      <div class="col-12 d-block d-md-none">
+        <div class="mobile-contacts">
+          <div class="message">
+            <a href="#" class="message-links"><img src="img/mail.svg" alt=""></a>
+            <a href="#" class="message-links"><img src="img/telegram.svg" alt=""></a>
+            <a href="#" class="message-links"><img src="img/whatsapp.svg" alt=""></a>
+          </div>
+          <a href="tel:+71231234509" class="phone">+7 (123) 123-45-09</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -56,7 +70,6 @@
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="company-name">CodeForge.</a>
-
         <div class="mobile-contacts">
           <div class="message">
             <a href="#" class="message-links"><img src="img/mail.svg" alt=""></a>
@@ -67,16 +80,16 @@
 
         </div>
 
+
         <div class="quote">Студия по разработке мобильных приложений полного цикла</div>
 
-        <!--        <a href="#" class="btn-language" data-toggle="modal" data-target="#languageModal">-->
-        <!--          <span class="btn-language__text">RU</span>-->
-        <!--          <span class="btn-language__icon"><svg class="svg-icon"><use-->
-        <!--              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>-->
-        <!--        </a>-->
+        <button class="btn btn-secondary btn-modal" type="button" data-toggle="modal" aria-haspopup="true" data-target="#exampleModal"
+                aria-expanded="false">
+          RU
+        </button>
 
         <div class="dropdown dropdown-language">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" data-target=""
                   aria-expanded="false">
             RU
             <span class="arrow-icon"><svg class="svg-icon"><use
@@ -99,7 +112,6 @@
     </div>
   </div>
 
-
 </header>
 
 <main class="home">
@@ -118,7 +130,7 @@
 
             <div class="subtitle">для Вашего бизнеса</div>
 
-            <a href="#price" class="btn btn-black go_to">
+            <a href="#price" class="btn btn-black go_to d-none d-lg-flex">
               <span class="btn-decor"></span>
               <span class="btn-text">Узнать стоимость</span>
             </a>
@@ -146,6 +158,11 @@
               <p>и оптимизируем бизнес</p>
             </div>
           </div>
+
+          <a href="#price" class="btn btn-black go_to d-flex d-lg-none">
+            <span class="btn-decor"></span>
+            <span class="btn-text">Узнать стоимость</span>
+          </a>
 
           <div class="cube-icon"><img src="img/cube.png" alt=""></div>
 
@@ -586,6 +603,277 @@
                       </ul>
                     </div>
                   </div>
+
+                  <div class="slide">
+                    <div class="form-quiz__content-slide">
+                      <h4>Авторизация пользователя</h4>
+                      <div class="box-text">
+                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
+                      </div>
+
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Номер телефона</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">E-mail</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">VK</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Facebook</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Twitter</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Google+</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="form-quiz__content-slide">
+                      <h4>Авторизация пользователя</h4>
+                      <div class="box-text">
+                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
+                      </div>
+
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Номер телефона</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">E-mail</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">VK</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Facebook</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Twitter</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Google+</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="form-quiz__content-slide">
+                      <h4>Авторизация пользователя</h4>
+                      <div class="box-text">
+                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
+                      </div>
+
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Номер телефона</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">E-mail</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">VK</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Facebook</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Twitter</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Google+</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="form-quiz__content-slide">
+                      <h4>Авторизация пользователя</h4>
+                      <div class="box-text">
+                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
+                      </div>
+
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Номер телефона</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">E-mail</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">VK</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Facebook</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Twitter</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Google+</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="form-quiz__content-slide">
+                      <h4>Авторизация пользователя</h4>
+                      <div class="box-text">
+                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
+                      </div>
+
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Номер телефона</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">E-mail</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">VK</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Facebook</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Twitter</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Google+</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
                   <div class="slide">
                     <div class="form-quiz__content-slide">
                       <h4>Авторизация пользователя</h4>
@@ -694,277 +982,12 @@
                   </div>
                   <div class="slide">
                     <div class="form-quiz__content-slide">
-                      <h4>Авторизация пользователя</h4>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
-                      <ul class="list-checkbox">
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Номер телефона</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">E-mail</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">VK</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Facebook</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Twitter</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Google+</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="form-quiz__content-slide">
-                      <h4>Авторизация пользователя</h4>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
-                      <ul class="list-checkbox">
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Номер телефона</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">E-mail</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">VK</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Facebook</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Twitter</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Google+</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="form-quiz__content-slide">
-                      <h4>Авторизация пользователя</h4>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
-                      <ul class="list-checkbox">
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Номер телефона</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">E-mail</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">VK</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Facebook</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Twitter</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Google+</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="form-quiz__content-slide">
-                      <h4>Авторизация пользователя</h4>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
-                      <ul class="list-checkbox">
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Номер телефона</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">E-mail</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">VK</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Facebook</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Twitter</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Google+</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="form-quiz__content-slide">
-                      <h4>Авторизация пользователя</h4>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
-                      <ul class="list-checkbox">
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Номер телефона</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">E-mail</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check" checked>
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">VK</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Facebook</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Twitter</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox">
-                            <input type="checkbox" class="inp-check">
-                            <span class="checkbox-custom"></span>
-                            <span class="checkbox-text">Google+</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="form-quiz__content-slide">
-                      <div class="form-quiz__icon"><img src="img/" alt=""></div>
+                      <div class="form-quiz__icon"><img src="img/file.png" alt=""></div>
                       <h3>Опрос завершен</h3>
-                      <div class="box-text">
-                        <p>Выберите, как пользователь будет авторизоваться в приложении (один или несколько) </p>
-                      </div>
-
+                      <a href="presents.html" class="links-download" target="_blank">
+                        <span class="links-download__file"><img src="img/file-icon.svg" alt=""></span>
+                        <span class="links-download__text">Скачать коммерческое предложение</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1010,6 +1033,30 @@
     </div>
   </div>
 </footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Select a language</h5>
+      </div>
+      <div class="modal-body">
+        <label class="label-radio">
+          <input type="radio" name="radio" class="inp-radio" checked>
+          <span class="radio-custom"></span>
+          <span class="radio-text">Russian</span>
+        </label>
+        <label class="label-radio">
+          <input type="radio" name="radio" class="inp-radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">English</span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
