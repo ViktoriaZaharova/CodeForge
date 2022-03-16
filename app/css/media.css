@@ -257,7 +257,20 @@
       right: -100px;
       top: -100px; }
   .mobile-menu {
-    padding: 80px 0 0; } }
+    padding: 80px 0 0; }
+  .presents-home .circle-bg {
+    top: -75px;
+    bottom: auto;
+    max-width: 600px; }
+  .presents-home h2 {
+    font-size: 40px;
+    line-height: normal; }
+  .table {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none; }
+  .presents-home {
+    padding: 160px 0 50px;
+    background: linear-gradient(68.52deg, #F7F4F4 23.13%, #FFFFFF 77.99%); } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -359,7 +372,17 @@
   .mobile-menu {
     padding: 69px 0 0; }
   .mobile-contacts {
-    margin: 40px auto 0; } }
+    margin: 40px auto 0; }
+  .table th {
+    padding: 13px 30px; }
+  .table thead th:first-child {
+    padding: 13px 30px; }
+  .price-val {
+    font-size: 24px; }
+  .date {
+    font-size: 20px; }
+  .total-presents .message-links {
+    font-size: 16px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -431,7 +454,27 @@
     display: block;
     font-size: 20px; }
   .dropdown-language {
-    display: none; } }
+    display: none; }
+  .total-presents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .total-presents .message {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .prices {
+    text-align: center;
+    margin: 20px auto 0; }
+  .presents-home h2 {
+    font-size: 30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 380px) {
@@ -451,4 +494,6 @@
     height: 300px; }
   .decor2 {
     right: 0 !important;
-    bottom: 270px !important; } }
+    bottom: 270px !important; }
+  .presents-home h2 {
+    font-size: 24px; } }

@@ -328,6 +328,22 @@
   .mobile-menu
     padding: 80px 0 0
 
+  .presents-home
+    .circle-bg
+      top: -75px
+      bottom: auto
+      max-width: 600px
+    h2
+      font-size: 40px
+      line-height: normal
+
+  .table
+    backdrop-filter: none
+
+  .presents-home
+    padding: 160px 0 50px
+    background: linear-gradient(68.52deg, #F7F4F4 23.13%, #FFFFFF 77.99%)
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   h2
@@ -460,6 +476,24 @@
   .mobile-contacts
     margin: 40px auto 0
 
+  .table th
+    padding: 13px 30px
+
+  .table thead th:first-child
+    padding: 13px 30px
+
+  .price-val
+    font-size: 24px
+
+  .date
+    font-size: 20px
+
+  .total-presents .message-links
+    font-size: 16px
+
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -529,7 +563,6 @@
     position: fixed
     left: 0
     top: 0
-    //z-index: 3
     background: url("../img/bg-menu.png") no-repeat center
       size: cover
     padding: 69px 0 51px
@@ -545,6 +578,20 @@
 
   .dropdown-language
     display: none
+
+  .total-presents
+    flex-direction: column
+    align-items: center
+    .message
+      justify-content: center
+      align-items: center
+
+  .prices
+    text-align: center
+    margin: 20px auto 0
+
+  .presents-home h2
+    font-size: 30px
 
 
 
@@ -572,3 +619,7 @@
   .decor2
     right: 0 !important
     bottom: 270px !important
+
+  .presents-home h2
+    font-size: 24px
+

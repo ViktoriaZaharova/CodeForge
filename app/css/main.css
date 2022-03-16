@@ -615,7 +615,7 @@ header {
 
 .circle-bg {
   position: absolute;
-  top: -60px;
+  top: -75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,7 +628,9 @@ header {
   left: 48%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: -1; }
+  z-index: -1;
+  max-width: 823px;
+  width: 100%; }
   .circle-bg img {
     z-index: 1;
     mix-blend-mode: normal; }
@@ -1679,3 +1681,122 @@ footer {
 
 .inp-radio:checked + .radio-custom:before {
   background: #000000; }
+
+.presents-home {
+  padding: 218px 0 79px;
+  background: linear-gradient(68.52deg, #F7F4F4 23.13%, #FFFFFF 77.99%); }
+  .presents-home h2 {
+    line-height: 73px;
+    font-size: 48px; }
+  .presents-home .decor1 {
+    width: 95px;
+    height: 95px;
+    top: -35% !important;
+    left: auto !important;
+    right: -320px !important; }
+    .presents-home .decor1 img {
+      -webkit-filter: blur(15.2816px);
+              filter: blur(15.2816px); }
+  .presents-home .decor2 {
+    top: 50% !important;
+    left: 20px !important;
+    width: 39px;
+    height: 39px; }
+    .presents-home .decor2 img {
+      -webkit-filter: none;
+              filter: none; }
+  .presents-home .decor3 {
+    top: 80% !important;
+    left: auto !important;
+    right: 20px !important; }
+  .presents-home .scene {
+    top: -218px; }
+
+.table {
+  width: 100%;
+  border-radius: 35px;
+  -webkit-backdrop-filter: blur(160px);
+          backdrop-filter: blur(160px);
+  background: rgba(255, 255, 255, 0.44);
+  margin: 45px auto 49px;
+  overflow: hidden; }
+  .table th {
+    padding: 13px;
+    text-align: center;
+    border: none;
+      border-right: 2px solid rgba(255, 255, 255, 0.46);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.46); }
+    .table th:last-child {
+      width: 50%;
+      border-right: none; }
+  .table tr {
+    min-height: 80px; }
+  .table thead {
+    border-top: 2px solid rgba(255, 255, 255, 0.46); }
+    .table thead th:first-child {
+      text-align: left;
+      padding: 13px 0 13px 80px; }
+  .table td {
+    min-height: 80px;
+    height: 80px;
+    padding: 15px 37px;
+    border: none;
+      border-right: 2px solid rgba(255, 255, 255, 0.46); }
+    .table td:last-child {
+      border: none; }
+  .table tbody tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.05); }
+  .table tbody td:nth-child(2) {
+    text-align: center; }
+
+thead {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 36px; }
+
+.total-presents {
+  width: 100%;
+  max-width: 1227px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .total-presents .message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .total-presents .message-links {
+    color: #000;
+    margin: 0 0 17px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Organetto", sans-serif; }
+    .total-presents .message-links img {
+      margin: 0 9px 0 0; }
+    .total-presents .message-links:last-child {
+      margin: 0; }
+
+.prices {
+  text-align: right; }
+
+.date {
+  margin: 0 0 4px;
+  color: rgba(0, 0, 0, 0.53);
+  font-size: 25px; }
+
+.price-val {
+  font-size: 30px;
+  font-weight: 600; }
