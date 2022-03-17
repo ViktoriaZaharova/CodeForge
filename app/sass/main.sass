@@ -349,7 +349,6 @@ header
   &__icon
     margin: 0 13px 0 0
     width: 42px
-
     span
       width: 100%
       background: #000
@@ -362,10 +361,9 @@ header
 
   &.click
     .btn-menu__icon
-      width: 29px
       height: 29px
-      background: url("../img/close.svg") no-repeat center
-        size: 100%
+      background: url("../img/close.svg") no-repeat right center
+        size: 29px
 
       span
         display: none
@@ -517,27 +515,15 @@ header
 .home
   position: relative
   z-index: 1
-  background: url("../img/bg.png") no-repeat center
+  background: url("../img/bg.jpg") no-repeat center
     size: cover
   overflow: hidden
-
-  &:before
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: url("../img/bg1.png") no-repeat center
-      size: cover
-    opacity: .05
-    z-index: -1
 
   .btn
     margin: 40px 0 0
 
   &.open-menu
-    background: url("../img/bg-menu.png") no-repeat center
+    background: url("../img/bg-menu.jpg") no-repeat center
       size: cover
 
     .container
@@ -751,7 +737,7 @@ header
     width: 225px
     height: 225px
     img
-      animation: rot 5s linear infinite
+      animation: rot 7s linear infinite
 
 @keyframes rot
   0%
@@ -774,7 +760,7 @@ header
     width: 100%
     height: 100%
     opacity: .04
-    background: url("../img/bg1.png") no-repeat center
+    background: url("../img/bg1.jpg") no-repeat center
       size: cover
 
   h2
@@ -795,6 +781,7 @@ header
 //work
 .work
   position: relative
+  min-height: 966px
   padding: 72px 0 0
 
   &:before
@@ -804,7 +791,7 @@ header
     left: 0
     width: 100%
     height: 100%
-    background: url("../img/bg1.png") no-repeat center
+    background: url("../img/bg1.jpg") no-repeat center
       size: cover
     opacity: .04
     z-index: -1
@@ -1052,7 +1039,7 @@ header
   font-size: 16px
   line-height: 35px
   padding: 0 0 0 65px
-  margin: 130px 0 235px
+  margin: 130px 0 197px
   .box-text
     color: #090808
 
@@ -1101,7 +1088,7 @@ header
     left: 0
     width: 100%
     height: 100%
-    background: url("../img/bg1.png") no-repeat center
+    background: url("../img/bg1.jpg") no-repeat center
       size: cover
     opacity: .04
     z-index: -1
@@ -1131,6 +1118,8 @@ header
     margin: 19px 0 43px
 
   &__title
+    position: relative
+    z-index: 1
     padding: 0 0 0 267px
 
 .prices-images
@@ -1261,6 +1250,7 @@ header
   color: #585656
   font-size: 15px
   cursor: pointer
+  transition: .3s ease
 
 .inp-check
   display: none
@@ -1273,6 +1263,7 @@ header
   border: 1.5px solid #DCDCDC
     radius: 6px
   position: relative
+  transition: .3s ease
 
   &:before
     content: ''
@@ -1282,6 +1273,7 @@ header
     transform: translate(-50%, -50%)
     width: 14px
     height: 11px
+    transition: .3s ease
 
 .inp-check:checked
   + .checkbox-custom
@@ -1508,17 +1500,19 @@ footer
   h2
     line-height: 73px
     font-size: 48px
+  .decor
+    position: absolute
   .decor1
     width: 95px
     height: 95px
-    top: -35% !important
+    top: 84px !important
     left: auto !important
-    right: -320px !important
+    right: 100px !important
     img
       filter: blur(15.2816px)
 
   .decor2
-    top: 50% !important
+    top: 608px !important
     left: 20px !important
     width: 39px
     height: 39px
@@ -1526,7 +1520,8 @@ footer
       filter: none
 
   .decor3
-    top: 80% !important
+    bottom: 746px
+    top: auto !important
     left: auto !important
     right: 20px !important
   .scene

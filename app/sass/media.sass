@@ -3,6 +3,12 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px)
+  .prices-images
+    max-width: 800px
+    left: -300px
+    top: 0
+
 @media only screen and (max-width: 1300px)
   .nav-tabs .nav-link
     width: 220px
@@ -26,8 +32,8 @@
     margin: 0 0 0 100px
 
   .prices-images
-    max-width: 700px
-    left: -300px
+    max-width: 600px
+    left: -200px
     top: 0
 
     &:before
@@ -235,7 +241,7 @@
     padding: 28px 0 0
 
   .home
-    background: url("../img/bg-mobile.png") no-repeat center
+    background: url("../img/bg-mobile.jpg") no-repeat center
       size: cover
 
   .home-content
@@ -563,13 +569,13 @@
     position: fixed
     left: 0
     top: 0
-    background: url("../img/bg-menu.png") no-repeat center
+    background: url("../img/bg-menu.jpg") no-repeat center
       size: cover
     padding: 69px 0 51px
 
 
   header.open-menu
-    .company-name, .dropdown-language
+    .company-name, .dropdown-language, .btn-lang
       opacity: 0
 
   .btn-modal

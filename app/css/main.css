@@ -426,10 +426,9 @@ header {
       .btn-menu__icon span:last-child {
         margin: 0; }
   .btn-menu.click .btn-menu__icon {
-    width: 29px;
     height: 29px;
-    background: url("../img/close.svg") no-repeat center;
-      background-size: 100%; }
+    background: url("../img/close.svg") no-repeat right center;
+      background-size: 29px; }
     .btn-menu.click .btn-menu__icon span {
       display: none; }
 
@@ -591,24 +590,13 @@ header {
 .home {
   position: relative;
   z-index: 1;
-  background: url("../img/bg.png") no-repeat center;
+  background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
   overflow: hidden; }
-  .home:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../img/bg1.png") no-repeat center;
-      background-size: cover;
-    opacity: .05;
-    z-index: -1; }
   .home .btn {
     margin: 40px 0 0; }
   .home.open-menu {
-    background: url("../img/bg-menu.png") no-repeat center;
+    background: url("../img/bg-menu.jpg") no-repeat center;
       background-size: cover; }
     .home.open-menu .container {
       opacity: 0; }
@@ -861,8 +849,8 @@ header {
     width: 225px;
     height: 225px; }
     .home-image__text img {
-      -webkit-animation: rot 5s linear infinite;
-              animation: rot 5s linear infinite; }
+      -webkit-animation: rot 7s linear infinite;
+              animation: rot 7s linear infinite; }
 
 @-webkit-keyframes rot {
   0% {
@@ -892,7 +880,7 @@ header {
     width: 100%;
     height: 100%;
     opacity: .04;
-    background: url("../img/bg1.png") no-repeat center;
+    background: url("../img/bg1.jpg") no-repeat center;
       background-size: cover; }
   .advantages h2 {
     margin: 0 auto 71px; }
@@ -908,6 +896,7 @@ header {
 
 .work {
   position: relative;
+  min-height: 966px;
   padding: 72px 0 0; }
   .work:before {
     content: '';
@@ -916,7 +905,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/bg1.png") no-repeat center;
+    background: url("../img/bg1.jpg") no-repeat center;
       background-size: cover;
     opacity: .04;
     z-index: -1; }
@@ -1168,7 +1157,7 @@ header {
   font-size: 16px;
   line-height: 35px;
   padding: 0 0 0 65px;
-  margin: 130px 0 235px; }
+  margin: 130px 0 197px; }
   .tab-content-text .box-text {
     color: #090808; }
 
@@ -1228,7 +1217,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/bg1.png") no-repeat center;
+    background: url("../img/bg1.jpg") no-repeat center;
       background-size: cover;
     opacity: .04;
     z-index: -1; }
@@ -1253,6 +1242,8 @@ header {
   .prices-content .box-text {
     margin: 19px 0 43px; }
   .prices-content__title {
+    position: relative;
+    z-index: 1;
     padding: 0 0 0 267px; }
 
 .prices-images {
@@ -1413,7 +1404,9 @@ header {
           align-items: center;
   color: #585656;
   font-size: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
 
 .inp-check {
   display: none; }
@@ -1425,7 +1418,9 @@ header {
   margin: 0 18px 0 0;
   border: 1.5px solid #DCDCDC;
     border-radius: 6px;
-  position: relative; }
+  position: relative;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   .checkbox-custom:before {
     content: '';
     position: absolute;
@@ -1434,7 +1429,9 @@ header {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 14px;
-    height: 11px; }
+    height: 11px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
 
 .inp-check:checked + .checkbox-custom {
   background: #AF7AFB;
@@ -1688,17 +1685,19 @@ footer {
   .presents-home h2 {
     line-height: 73px;
     font-size: 48px; }
+  .presents-home .decor {
+    position: absolute; }
   .presents-home .decor1 {
     width: 95px;
     height: 95px;
-    top: -35% !important;
+    top: 84px !important;
     left: auto !important;
-    right: -320px !important; }
+    right: 100px !important; }
     .presents-home .decor1 img {
       -webkit-filter: blur(15.2816px);
               filter: blur(15.2816px); }
   .presents-home .decor2 {
-    top: 50% !important;
+    top: 608px !important;
     left: 20px !important;
     width: 39px;
     height: 39px; }
@@ -1706,7 +1705,8 @@ footer {
       -webkit-filter: none;
               filter: none; }
   .presents-home .decor3 {
-    top: 80% !important;
+    bottom: 746px;
+    top: auto !important;
     left: auto !important;
     right: 20px !important; }
   .presents-home .scene {
