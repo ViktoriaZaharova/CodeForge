@@ -29,14 +29,12 @@ $('.btn-menu').on('click', function () {
 });
 
 
-// $(document).ready(function () {
-//     var scene = document.getElementById('scene');
-//     var parallaxInstance = new Parallax(scene, {
-//         pointerEvents: true
-//     });
-//
-//
-// });
+$(document).ready(function () {
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene, {
+        pointerEvents: true
+    });
+});
 
 
 $('.form-quiz__content').slick({

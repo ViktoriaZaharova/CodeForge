@@ -718,9 +718,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.decor {
-  position: absolute; }
-
 .decor1 {
   top: 10% !important;
   left: -297px !important;
@@ -854,6 +851,22 @@ header {
     .home-image__text img {
       -webkit-animation: rot 7s linear infinite;
               animation: rot 7s linear infinite; }
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .advantages {
   padding: 113px 0 57px;
