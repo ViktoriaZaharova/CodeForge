@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 $('.btn-menu').on('click', function () {
     $(this).toggleClass('click');
-    $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle(100);
     $('.home').toggleClass('open-menu');
     $('header').toggleClass('open-menu');
     $('body').toggleClass('no-scroll');

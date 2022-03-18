@@ -353,9 +353,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .message a {
@@ -368,9 +368,17 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 23px 0 0; }
+    margin: 0 23px 0 0;
+    fill: #000;
+    width: 25px;
+    height: 22px; }
+    .message a:hover {
+      fill: #AF7AFB; }
     .message a:last-child {
       margin: 0; }
+  .message .svg-icon {
+    width: 100%;
+    height: 100%; }
 
 header {
   padding: 42px 0;
@@ -488,6 +496,9 @@ header {
   color: #000;
   font-size: 20px;
   font-weight: 700; }
+  .dropdown-language .dropdown-item:hover {
+    background: transparent;
+    color: #AF7AFB; }
 
 .arrow-icon {
   display: -webkit-box;
@@ -1775,9 +1786,15 @@ thead {
     margin: 0 0 17px;
     font-size: 20px;
     font-weight: 700;
-    font-family: "Organetto", sans-serif; }
-    .total-presents .message-links img {
-      margin: 0 9px 0 0; }
+    font-family: "Organetto", sans-serif;
+    width: auto;
+    height: auto; }
+    .total-presents .message-links:hover {
+      color: #AF7AFB; }
+    .total-presents .message-links .svg-icon {
+      margin: 0 9px 0 0;
+      width: 25px;
+      height: 20px; }
     .total-presents .message-links:last-child {
       margin: 0; }
 
