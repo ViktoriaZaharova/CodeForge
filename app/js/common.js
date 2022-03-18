@@ -56,3 +56,5 @@ $(".form-quiz__content").on("afterChange", function (event) {
         $('.form-quiz__nav').css('display', 'flex');
     }
 });
+
+$('#someTab').tab();

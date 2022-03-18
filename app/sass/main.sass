@@ -795,7 +795,6 @@ header
       size: cover
     opacity: .04
     z-index: -1
-
   h2
     margin: 0 auto 51px
 
@@ -830,14 +829,6 @@ header
     margin: 0 -46px 0 0
     z-index: 2
 
-    &:before
-      content: ''
-      position: absolute
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
-
     &:last-child
       margin: 0
 
@@ -846,14 +837,12 @@ header
       border: 1px solid rgba(134, 134, 134, 0.55)
 
     &.active
-      background: #fff
+      background: #fff url("../img/decor-btn2.svg") no-repeat center
+        size: cover
       font-weight: 500
       z-index: 1
       border: 1px solid rgba(134, 134, 134, 0.55)
 
-      &:before
-        background: url("../img/decor-btn2.svg") no-repeat center
-          size: cover
 
 .tab-number
   font-size: 126px
@@ -1056,12 +1045,13 @@ header
   bottom: 374px
 
 .tabs-decor2
-  filter: blur(8px)
   width: 52px
   height: 52px
   right: 60px
   bottom: 190px
   z-index: 1
+  img
+    filter: blur(8px)
 
 .tabs-decor3
   width: 209px

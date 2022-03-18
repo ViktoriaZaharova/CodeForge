@@ -954,26 +954,17 @@ header {
     font-size: 15px;
     margin: 0 -46px 0 0;
     z-index: 2; }
-    .nav-tabs .nav-link:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%; }
     .nav-tabs .nav-link:last-child {
       margin: 0; }
     .nav-tabs .nav-link:hover {
       opacity: 1;
       border: 1px solid rgba(134, 134, 134, 0.55); }
     .nav-tabs .nav-link.active {
-      background: #fff;
+      background: #fff url("../img/decor-btn2.svg") no-repeat center;
+        background-size: cover;
       font-weight: 500;
       z-index: 1;
       border: 1px solid rgba(134, 134, 134, 0.55); }
-      .nav-tabs .nav-link.active:before {
-        background: url("../img/decor-btn2.svg") no-repeat center;
-          background-size: cover; }
 
 .tab-number {
   font-size: 126px;
@@ -1180,13 +1171,14 @@ header {
   bottom: 374px; }
 
 .tabs-decor2 {
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
   width: 52px;
   height: 52px;
   right: 60px;
   bottom: 190px;
   z-index: 1; }
+  .tabs-decor2 img {
+    -webkit-filter: blur(8px);
+            filter: blur(8px); }
 
 .tabs-decor3 {
   width: 209px;
