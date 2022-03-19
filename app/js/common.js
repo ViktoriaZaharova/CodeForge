@@ -2,12 +2,16 @@
 $(document).ready(function () {
     $('.go_to').click(function (e) {
         e.preventDefault();
-        var scroll_el = $(this).attr('href');
-        if ($(scroll_el).length !== 0) {
-            $('html, body').animate({
-                scrollTop: $(scroll_el).offset().top
-            }, 500);
-        }
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 500 мс
+        $('body,html').animate({scrollTop: top - 40}, 500);
+
         $('.mobile-menu').fadeOut();
         $('.home').removeClass('open-menu');
         $('header').removeClass('open-menu');
@@ -22,7 +26,7 @@ $(document).ready(function () {
 
 $('.btn-menu').on('click', function () {
     $(this).toggleClass('click');
-    $('.mobile-menu').fadeToggle(100);
+    $('.mobile-menu').toggleClass('open-menu');
     $('.home').toggleClass('open-menu');
     $('header').toggleClass('open-menu');
     $('body').toggleClass('no-scroll');

@@ -537,6 +537,8 @@ header {
   z-index: 2;
   padding: 149px 0 0;
   display: none; }
+  .mobile-menu.open-menu {
+    display: block; }
   .mobile-menu__links {
     text-align: center;
     display: -webkit-box;

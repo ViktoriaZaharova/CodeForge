@@ -137,7 +137,8 @@
     border-radius: 0;
     background: #FBF9F9;
     width: calc(100% + 30px);
-    margin: 0 -15px; }
+    margin: 0 -15px;
+    min-height: 537px; }
   .slick-dots {
     margin: 0 0 29px; }
     .slick-dots li {
@@ -175,7 +176,7 @@
       line-height: 32px; }
   .work {
     padding: 35px 0 42px;
-    min-height: auto; }
+    min-height: 950px; }
     .work h2 {
       margin: 0 auto 25px; }
   .nav-tabs {
@@ -405,6 +406,10 @@
     font-size: 16px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 690px) {
+  .work {
+    min-height: 830px; } }
+
 @media only screen and (max-width: 576px) {
   .advantages-box__img {
     margin: 0 auto -20px; }
@@ -494,13 +499,25 @@
     text-align: center;
     margin: 20px auto 0; }
   .presents-home h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .work {
+    min-height: 800px; } }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 480px) {
+  .home-image {
+    min-width: 360px;
+    max-width: 360px;
+    margin: 0 auto -190px; }
+  .circle-bg {
+    bottom: 20px; }
+  .work {
+    min-height: 705px; } }
+
 @media only screen and (max-width: 380px) {
   .home-image {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 290px;
+    max-width: 290px;
     margin: 0 auto -190px; }
     .home-image__logo {
       top: 90px; }
@@ -516,4 +533,6 @@
     right: 0 !important;
     bottom: 270px !important; }
   .presents-home h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .work {
+    min-height: 715px; } }
