@@ -12,7 +12,7 @@ $(document).ready(function () {
         //анимируем переход на расстояние - top за 500 мс
         $('body,html').animate({scrollTop: top - 40}, 500);
 
-        $('.mobile-menu').fadeOut();
+        $('.mobile-menu').removeClass('open-menu');
         $('.home').removeClass('open-menu');
         $('header').removeClass('open-menu');
         $('body').removeClass('no-scroll');
@@ -54,10 +54,13 @@ $('.form-quiz__content').slick({
 
 $(".form-quiz__content").on("afterChange", function (event) {
     if ($(this).find('.slick-slide').last().hasClass('slick-active')) {
-        $('.form-quiz__nav').hide();
+        $('.form-quiz__nav').css('opacity', 0);
+    }
+    else {
+        $('.form-quiz__nav').css('opacity', 1);
     }
     if ($(this).find('.slick-dots li').first().hasClass('slick-active')) {
-        $('.form-quiz__nav').css('display', 'flex');
+        $('.form-quiz__nav').css('opacity', 1);
     }
 });
 
