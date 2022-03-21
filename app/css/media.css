@@ -503,7 +503,18 @@
   .work {
     min-height: 800px; }
   .links-download {
-    margin: 35px 0 0; } }
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 35px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .links-download__text {
+      max-width: 230px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
