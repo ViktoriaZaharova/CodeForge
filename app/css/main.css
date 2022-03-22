@@ -433,12 +433,18 @@ header {
       margin: 0 0 4px; }
       .btn-menu__icon span:last-child {
         margin: 0; }
+  .btn-menu:hover {
+    color: #AF7AFB; }
   .btn-menu.click .btn-menu__icon {
     height: 29px;
     background: url("../img/close.svg") no-repeat right center;
       background-size: 29px; }
     .btn-menu.click .btn-menu__icon span {
       display: none; }
+
+.btn-secondary:hover {
+  background: transparent;
+  color: #212529; }
 
 .dropdown-language .dropdown-toggle {
   padding: 0;
@@ -455,6 +461,8 @@ header {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .dropdown-language .dropdown-toggle:hover {
+    color: #AF7AFB; }
 
 .dropdown-language .arrow-icon {
   margin: 0 0 0 12px; }

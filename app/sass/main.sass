@@ -367,7 +367,8 @@ header
 
       &:last-child
         margin: 0
-
+  &:hover
+    color: $accent
   &.click
     .btn-menu__icon
       height: 29px
@@ -377,6 +378,9 @@ header
       span
         display: none
 
+.btn-secondary:hover
+  background: transparent
+  color: #212529
 
 .dropdown-language
   .dropdown-toggle
@@ -395,6 +399,8 @@ header
     &:focus
       outline: none
       box-shadow: none
+    &:hover
+      color: $accent
 
   .arrow-icon
     margin: 0 0 0 12px
