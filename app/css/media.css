@@ -514,7 +514,14 @@
         -ms-flex-align: center;
             align-items: center; }
     .links-download__text {
-      max-width: 230px; } }
+      max-width: 230px; }
+  header.open-menu {
+    position: fixed;
+    z-index: 5; }
+  .mobile-menu {
+    z-index: 5;
+    height: 100%;
+    overflow-y: auto; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
